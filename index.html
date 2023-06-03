@@ -4,10 +4,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Budget App</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1> adil fareed</h1>
+    <div class="wrapper" >
+        <div class="container ">
+            <div class="sub-container">  
+                <div class="total-amount-container ">   
+                    <h2>Budget</h2>
+                    <p class="hide" id="budget-error">
+                        value cannot be null or negavtive
+                        
+                    </p>
+                    <input type="number" id="total-budget"
+                    placeholder="Enter total amount">
+                    <button class="submit" id="total-amount-button"> Set Budget</button>
+                </div> 
+                      <div class="user-amount-container">
+                        <h2>  Expenses</h2>
+                        <P class="hide " id="product-title-error">
+                            value cannot be empty
+                        </P>
+                        <input type="text"
+                        class="product-title"
+                        id="product-title"
+                        placeholder="Enter Title of product">
+                        <input type="number" name="" 
+                        id="useer-amount"
+                        placeholder="Enter cost of product">
+                        <button class="submit" id="check-amount ">check amount</button>
+                      </div> 
+                    
+                
+            </div>
+            <div class="output-container flex-space" >  
+                <div>
+                    <p> Total Budget</p>
+                    <span id="amount">0 </span>
+                </div>
+                <div>
+                    <p> Expenses</p>
+                    <span id="expenditure-value">0 </span>
+                </div>
+                <div>
+                    <p> Balance</p>
+                    <span id="balance-amount">0 </span>
+                </div> 
+            </div>
+        </div>
+        <div class="list">
+             <h3>Expense list</h3>
+             <div class="list-container" id="list"></div>
+        </div>
+    </div>
     
 </body>
 </html>
